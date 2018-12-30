@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <h2 class="name"><%= product.name %></h2>
+  <%- linkTo('Edit this product', editProductPath(params.id), {class: 'btn btn-default pull-right'}); %>
+  <%- linkTo('Back to list', productPath(''), {class: 'btn btn-default pull-right'}); %>
+</div>
+
+<h2>Product Properties</h2>
+<% for(var i in product) { -%>
+<% if(i !== 'saved') { -%>
+<div class="row list-item">
+  <div class="col-md-4">
+    <h3><%= i %></h3>
+  </div>
+  <div class="col-md-8">
+    <h3><i class="glyphicon-list-alt"></i><span class="<%= i %>"><%= product[i] %></span></h3>
+  </div>
+</div>
+<% } -%><% } -%>

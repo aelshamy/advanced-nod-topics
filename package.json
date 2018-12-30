@@ -1,0 +1,21 @@
+{
+  "name": "advanced-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dns-lookup.js",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "mongoose": "^5.4.1",
+    "nano": "^7.1.1",
+    "pg": "^7.7.1",
+    "redis": "^2.8.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
